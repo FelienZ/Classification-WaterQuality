@@ -4,7 +4,7 @@ import pandas as pd
 import pickle
 
 app = Flask(__name__)
-CORS(app, origins=['http://localhost:5173', 'https://el-prediksi.vercel.app/ml'])
+CORS(app, origins=['http://localhost:5173', 'https://el-prediksi.vercel.app'])
 
 # Load model
 with open("water_quality_rf_model.pkl", "rb") as f:
